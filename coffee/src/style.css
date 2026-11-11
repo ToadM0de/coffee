@@ -1,0 +1,27 @@
+.app[data-theme="light"] {
+  --background: #f6f3ed;
+  --text: #29251f;
+  --card: #ffffff;
+  --border: #ded8ce;
+}
+
+.app[data-theme="dark"] {
+  --background: #201f1c;
+  --text: #f6f3ed;
+  --card: #302e29;
+  --border: #514d45;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app .orderCard,
+.app .menuItem {
+  background-color: var(--card);
+  color: var(--text);
+  border-color: var(--border);
+}
